@@ -1,0 +1,8 @@
+<h2><%= @pet.name %>, the <%= @pet.species %></h2>
+<p>Found at <%= @pet.address %>, on <%= @pet.date %></p>
+
+
+<%= link_to 'Delete', pet_path(@pet), method: :delete, data: {confirm: 'tem certeza pokemón?????'}%>
+
+
+<%= link_to 'Go back to all pets', pets_path %>
